@@ -104,11 +104,12 @@ img {
   color: #69866d;
 }
 .hero {
-  display: grid;
-  grid-template-columns: 1.17fr 0.83fr;
-  align-items: center;
-  gap: 60px;
-  padding-block: 90px 80px;
+  padding-block: 80px;
+  text-align: center;
+}
+.hero-copy {
+  max-width: 760px;
+  margin-inline: auto;
 }
 .status {
   display: inline-flex;
@@ -148,7 +149,7 @@ h1 > span {
   max-width: 420px;
   color: var(--muted);
   font-size: 14px;
-  margin: 18px 0 26px;
+  margin: 18px auto 26px;
 }
 .primary-link {
   display: inline-flex;
@@ -169,16 +170,8 @@ h1 > span {
 .hero-note {
   font-size: 10px;
   color: #82907e;
-  margin-top: 16px;
+  margin: 16px auto 0;
   max-width: 380px;
-}
-.hero-art {
-  padding: 16px 0 0;
-}
-.hero-art > img {
-  width: 100%;
-  max-height: 370px;
-  object-fit: contain;
 }
 .eyebrow {
   font-size: 10px;
@@ -342,9 +335,6 @@ footer > span {
   color: #7d8b78;
 }
 @media (max-width: 1024px) {
-  .hero {
-    gap: 35px;
-  }
   h1 {
     font-size: 58px;
   }
@@ -380,8 +370,6 @@ footer > span {
     gap: 8px;
   }
   .hero {
-    grid-template-columns: 1fr;
-    gap: 30px;
     padding-block: 45px;
   }
   .hero h1 {
@@ -393,14 +381,6 @@ footer > span {
   }
   .hero-description {
     font-size: 13px;
-  }
-  .hero-art {
-    max-width: 390px;
-    width: 100%;
-    margin: auto;
-  }
-  .hero-art > img {
-    max-height: 290px;
   }
   .hero-note {
     font-size: 9px;
