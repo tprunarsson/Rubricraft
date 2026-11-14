@@ -180,59 +180,18 @@ h1 > span {
   max-height: 370px;
   object-fit: contain;
 }
-.hero-art figcaption {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  border-top: 1px solid var(--line);
-  padding: 22px 12px 0;
-  margin-top: 27px;
-}
-.hero-art figcaption span {
-  font-size: 10px;
-  color: #798b77;
-  line-height: 1.7;
-  text-align: center;
-}
-.hero-art figcaption strong {
-  display: block;
-  font-size: 11px;
-  color: #37523b;
-  font-weight: 550;
-}
 .eyebrow {
   font-size: 10px;
   letter-spacing: 0.18em;
   font-weight: 600;
   color: #698168;
 }
-.idea {
-  display: grid;
-  grid-template-columns: 0.64fr 1fr 1fr;
-  gap: 42px;
-  align-items: center;
-  padding-block: 42px;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-.idea h2 {
-  font-size: 27px;
-  line-height: 1.18;
-  letter-spacing: -0.045em;
-  font-weight: 550;
-}
-.idea h2 span {
-  color: #6d8c70;
-}
-.idea > p:last-child {
-  font-size: 13px;
-  color: var(--muted);
-}
 .workflow {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 120px;
   padding-block: 100px;
+  border-top: 1px solid var(--line);
 }
 h2 {
   font-size: clamp(34px, 3.6vw, 47px);
@@ -378,7 +337,6 @@ footer {
 footer .brand {
   font-size: 20px;
 }
-footer > p,
 footer > span {
   font-size: 10px;
   color: #7d8b78;
@@ -395,10 +353,6 @@ footer > span {
   .preview,
   .questions {
     gap: 60px;
-  }
-  .idea {
-    grid-template-columns: 0.5fr 1fr 1fr;
-    gap: 25px;
   }
 }
 @media (max-width: 720px) {
@@ -419,9 +373,6 @@ footer > span {
   .site-header nav {
     gap: 18px;
     font-size: 11px;
-  }
-  .site-header nav > a:first-child {
-    display: none;
   }
   .site-header nav a:last-child {
     border: 0;
@@ -451,23 +402,8 @@ footer > span {
   .hero-art > img {
     max-height: 290px;
   }
-  .hero-art figcaption {
-    padding-top: 18px;
-    margin-top: 20px;
-  }
   .hero-note {
     font-size: 9px;
-  }
-  .idea {
-    grid-template-columns: 1fr;
-    gap: 18px;
-    padding-block: 30px;
-  }
-  .idea h2 {
-    font-size: 30px;
-  }
-  .idea > p:last-child {
-    max-width: 440px;
   }
   .workflow,
   .desktop-inner,
