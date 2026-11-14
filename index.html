@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Our website is coming soon. Visit this page for updates.">
+  <title>Coming Soon | Your Project</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: #f7f6f2;
+      background:
+        radial-gradient(circle at 84% 12%, rgba(94, 174, 180, .19), transparent 33%),
+        radial-gradient(circle at 12% 87%, rgba(107, 102, 188, .15), transparent 38%),
+        #101827;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    }
+    main { width: min(100%, 760px); }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 68px;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .mark { width: 16px; height: 16px; border-radius: 5px; background: #baf4d1; transform: rotate(25deg); }
+    .eyebrow { color: #baf4d1; text-transform: uppercase; font-size: 12px; font-weight: 800; letter-spacing: .18em; }
+    h1 { max-width: 690px; margin: 15px 0 22px; font-size: clamp(48px, 8vw, 82px); line-height: 1.04; letter-spacing: -.055em; }
+    .intro { max-width: 590px; margin: 0 0 45px; font-size: clamp(17px, 2.4vw, 21px); line-height: 1.7; color: #c5cbd4; }
+    .info { padding: 25px 28px; border-radius: 18px; border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.045); }
+    .info h2 { font-size: 15px; margin: 0 0 9px; }
+    .info p { font-size: 15px; color: #c5cbd4; line-height: 1.7; margin: 0; }
+    footer { margin-top: 68px; font-size: 13px; color: #8e9aaa; }
+    @media (max-width: 480px) { .brand { margin-bottom: 52px; } .info { padding: 22px; } footer { margin-top: 50px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand"><span class="mark" aria-hidden="true"></span> Your Project</div>
+    <p class="eyebrow">Website in progress</p>
+    <h1>Something good is on its way.</h1>
+    <p class="intro">We're building a new home for our ideas, updates, and resources. This is our temporary information page while we get everything ready.</p>
+    <section class="info" aria-labelledby="status-title">
+      <h2 id="status-title">What's happening?</h2>
+      <p>Our full website is being prepared. Check back here for news and updates. Thank you for visiting!</p>
+    </section>
+    <footer>&copy; <span id="year"></span> Your Project</footer>
+  </main>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
