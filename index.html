@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#f8faf7" />
     <meta
       name="description"
-      content="Rubricraft is a desktop grading workspace in development. Clear rubrics, focused review, and optional AI assistance—with teachers in control."
+      content="Rubricraft is a desktop grading workspace for Canvas. Clear rubrics, focused review, and optional AI drafts—with every grade approved by the teacher."
     />
     <meta
       property="og:title"
@@ -18,10 +18,11 @@
     />
     <meta
       property="og:image"
-      content="https://rubricraft.com/assets/rubricraft-mark.png"
+      content="https://rubricraft.com/assets/rubricraft-icon.png"
     />
     <link rel="canonical" href="https://rubricraft.com/" />
-    <link rel="icon" type="image/png" href="assets/rubricraft-mark.png" />
+    <link rel="icon" type="image/svg+xml" href="assets/rubricraft-mark.svg" />
+    <link rel="apple-touch-icon" href="assets/rubricraft-icon.png" />
     <link rel="stylesheet" href="style.css" />
     <title>Rubricraft — Thoughtful assessment, made easier</title>
   </head>
@@ -30,15 +31,15 @@
     <header class="site-header container">
       <a class="brand" href="./" aria-label="Rubricraft home"
         ><img
-          src="assets/rubricraft-mark.png"
+          src="assets/rubricraft-mark.svg"
           width="39"
           height="39"
           alt=""
         /><span>Rubricraft<span class="brand-dot">.</span></span></a
       >
       <nav aria-label="Main navigation">
-        <a href="#workflow">How it works</a
-        ><a href="#desktop">Desktop app <span aria-hidden="true">↗</span></a>
+        <a href="#workflow">How it works</a><a href="#method">Grading</a
+        ><a href="#screens">See it</a><a href="#desktop">Desktop app</a>
       </nav>
     </header>
     <main id="main">
@@ -61,7 +62,7 @@
           <a class="primary-link" href="#workflow"
             >Explore the workflow <span aria-hidden="true">↓</span></a
           >
-          <p class="hero-note">Desktop app in development</p>
+          <p class="hero-note">Early preview for Mac, Windows and Linux</p>
         </div>
       </section>
       <section
@@ -71,21 +72,21 @@
       >
         <div class="section-heading">
           <h2 id="workflow-title">How it works.</h2>
-          <p>The workflow we’re building, from Canvas to reviewed grades.</p>
+          <p>From Canvas to reviewed grades, and back to Canvas.</p>
         </div>
         <ol class="workflow-list">
           <li>
-            <span class="step">01</span>
             <div>
               <h3>Choose your course and assignment</h3>
               <p>
-                Download the assignment description and student submissions from
-                Canvas into your workspace.
+                Download the assignment description, rubric and student
+                submissions from Canvas into your workspace. Already started
+                grading in Canvas? Rubricraft picks up the rubric scores and
+                comments, so you can continue where you left off.
               </p>
             </div>
           </li>
           <li>
-            <span class="step">02</span>
             <div>
               <h3>Review by question or rubric item</h3>
               <p>
@@ -95,17 +96,109 @@
             </div>
           </li>
           <li>
-            <span class="step">03</span>
             <div>
               <h3>Approve and send to Canvas</h3>
               <p>
                 Grade manually or ask Claude for a draft. Review the grades and
-                feedback, make any changes, and approve. Rubricraft uploads the
-                final grades and feedback to Canvas for you.
+                feedback, make any changes, and approve. You see exactly what
+                will be sent before Rubricraft uploads the final grades and
+                feedback to Canvas.
               </p>
             </div>
           </li>
         </ol>
+      </section>
+      <section
+        class="method container"
+        id="method"
+        aria-labelledby="method-title"
+      >
+        <div class="section-heading">
+          <h2 id="method-title">Grade the way you already do.</h2>
+          <p>
+            If you have graded with rubrics in Gradescope, this will feel
+            familiar.
+          </p>
+        </div>
+        <ul class="method-list">
+          <li>
+            <h3>One rubric item at a time</h3>
+            <p>
+              Go through every student on the same question or rubric item, so
+              the same standard applies to everyone.
+            </p>
+          </li>
+          <li>
+            <h3>Reusable remarks with points</h3>
+            <p>
+              Write a remark once, such as “State the non-negativity bounds,
+              −0.5”, and apply it to every answer with the same issue. Change
+              its wording or points later and every student who has it is
+              updated, and marked for you to check again.
+            </p>
+          </li>
+          <li>
+            <h3>AI drafts that follow your method</h3>
+            <p>
+              Claude starts from full credit, reuses your remarks where they fit
+              and suggests new ones only when needed. Its drafts use the same
+              remarks you do, so you can review them quickly, and nothing counts
+              until you apply and approve it.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section
+        class="screens container"
+        id="screens"
+        aria-labelledby="screens-title"
+      >
+        <div class="section-heading">
+          <h2 id="screens-title">See it in use.</h2>
+          <p>Screens from the app, with a fictional course and students.</p>
+        </div>
+        <figure class="screen screen-wide">
+          <img
+            src="assets/screenshots/grading.webp"
+            width="1600"
+            height="1012"
+            alt="Grading view: a student's PDF answer on the left and the rubric on the right, with a score, a reusable remark and feedback for each rubric item."
+          />
+          <figcaption>
+            <strong>The work and the rubric, side by side.</strong> Score each
+            rubric item, reuse remarks across students, and ask Claude for a
+            draft when you want one.
+          </figcaption>
+        </figure>
+        <div class="screen-pair">
+          <figure class="screen">
+            <img
+              src="assets/screenshots/approval.webp"
+              width="1600"
+              height="1012"
+              alt="Upload dialog listing exactly which scores and comments will be sent to Canvas, with an approval checkbox before sending."
+              loading="lazy"
+            />
+            <figcaption>
+              <strong>Nothing is sent without your approval.</strong> Preview
+              exactly what each student will receive. Private notes stay on your
+              computer.
+            </figcaption>
+          </figure>
+          <figure class="screen">
+            <img
+              src="assets/screenshots/courses.webp"
+              width="1600"
+              height="1012"
+              alt="Course list from Canvas, grouped by year, showing how many submissions are waiting in each course."
+              loading="lazy"
+            />
+            <figcaption>
+              <strong>Your Canvas courses, by year.</strong> See where
+              submissions are waiting and open an assignment to start.
+            </figcaption>
+          </figure>
+        </div>
       </section>
       <section
         class="desktop-section"
@@ -116,8 +209,9 @@
           <div>
             <h2 id="desktop-title">Runs on your computer.</h2>
             <p class="desktop-lead">
-              Your files and grading work are stored on your computer. You can
-              use Rubricraft without AI.
+              A desktop app for Mac, Windows and Linux. Your files and grading
+              work are stored on your computer. You can use Rubricraft without
+              AI.
             </p>
           </div>
           <div class="desktop-details">
@@ -168,8 +262,11 @@
           <details>
             <summary>Does AI decide the grades?</summary>
             <p>
-              AI provides draft suggestions for review. The teacher checks the
-              evidence, changes the draft, and makes the final decision.
+              No. AI provides draft suggestions for review. The teacher checks
+              the evidence, changes the draft, and makes the final decision.
+              Only grades you have approved can be sent to Canvas, and an
+              existing Canvas grade is never replaced without your explicit
+              choice.
             </p>
           </details>
           <details>
@@ -190,13 +287,32 @@
             </p>
           </details>
           <details>
+            <summary>What if a submission tries to instruct the AI?</summary>
+            <p>
+              Rubricraft flags text in a PDF that a reader cannot see, or that
+              is addressed to an AI grader, and shows it to you above the PDF.
+              It is a prompt to look closer, not proof of misconduct, and it
+              cannot catch everything. That is one reason AI only ever drafts
+              and you approve every grade.
+            </p>
+          </details>
+          <details>
+            <summary>Can I continue grading I started in Canvas?</summary>
+            <p>
+              Yes. When you first open an assignment, rubric scores and comments
+              already in Canvas are brought into Rubricraft. Finish the
+              remaining submissions by hand or with AI drafts, or revisit
+              earlier ones.
+            </p>
+          </details>
+          <details>
             <summary>When can I try it?</summary>
             <p>
-              An early Mac preview supports Canvas course and assignment
-              browsing, plus question-by-question grading with sample PDFs.
-              Review by rubric item, submission downloads, conversational
-              grading, broader feedback, and sending approved grades back to
-              Canvas are still being developed.
+              An early preview for Mac, Windows and Linux is being tested with
+              real Canvas courses. It covers course and assignment browsing,
+              submission downloads, review by rubric item, optional Claude
+              drafts, and sending approved grades back to Canvas. Grading by
+              conversation and class-wide feedback are still being developed.
             </p>
           </details>
         </div>
@@ -205,13 +321,13 @@
     <footer class="container">
       <a class="brand" href="./"
         ><img
-          src="assets/rubricraft-mark.png"
+          src="assets/rubricraft-mark.svg"
           width="30"
           height="30"
           alt=""
         /><span>Rubricraft<span class="brand-dot">.</span></span></a
       >
-      <span>© 2026 Rubricraft · In development</span>
+      <span>© 2026 Rubricraft · Early preview</span>
     </footer>
   </body>
 </html>
