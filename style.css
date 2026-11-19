@@ -288,6 +288,16 @@ h3 {
 .preview-update {
   margin-top: 18px;
 }
+.preview .preview-list {
+  margin-top: 28px;
+  gap: 22px;
+}
+.preview .preview-list li {
+  padding-bottom: 20px;
+}
+.preview .preview-list h3 {
+  color: var(--ink);
+}
 .questions {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -390,7 +400,62 @@ footer > span {
   gap: 32px;
   margin-top: 44px;
 }
+.support {
+  padding-block: 50px;
+  border-top: 1px solid var(--line);
+}
+.support p {
+  max-width: 70ch;
+  color: var(--muted);
+  font-size: 16px;
+}
+.beta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+  padding-block: 90px;
+  border-top: 1px solid var(--line);
+}
+.beta-body {
+  color: var(--muted);
+  font-size: 16px;
+}
+.beta-body h3 {
+  margin: 34px 0 10px;
+  font-size: 18px;
+  color: var(--ink);
+}
+.beta-body ul {
+  margin: 0;
+  padding-left: 20px;
+}
+.beta-body li {
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+.beta-body strong,
+.beta-body em {
+  color: var(--ink);
+}
+.text-link {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.secondary-link {
+  display: inline-block;
+  margin-left: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 @media (max-width: 1024px) {
+  .beta {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
   .method {
     grid-template-columns: 1fr;
     gap: 30px;
