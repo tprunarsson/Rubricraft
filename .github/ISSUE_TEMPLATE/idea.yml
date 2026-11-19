@@ -1,0 +1,20 @@
+name: Idea or feedback
+description: Suggest an improvement or tell us how Rubricraft fits your teaching.
+labels: [feedback]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues are public: **never include student names, student work or your Canvas token.**
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea or feedback
+      description: What would make grading easier for you? What kind of assignments do you grade (for example modelling, proofs, reports)?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Rubricraft version (optional)
+      placeholder: 0.1.1

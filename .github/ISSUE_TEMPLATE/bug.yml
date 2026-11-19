@@ -1,0 +1,35 @@
+name: Something does not work
+description: Report a problem with the Rubricraft beta.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for testing Rubricraft. Issues are public: **never include student names, student work, screenshots showing students, or your Canvas token.** Describe the problem in general terms, or use fictional data.
+  - type: input
+    id: version
+    attributes:
+      label: Rubricraft version
+      description: Shown at the bottom of the left sidebar, for example "Rubricraft 0.1.1 beta".
+      placeholder: 0.1.1
+    validations:
+      required: true
+  - type: dropdown
+    id: system
+    attributes:
+      label: Computer
+      options: [Mac, Windows, Linux]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead? Include the exact error message if there was one.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where in the app?
+      options: [Installing or opening the app, Connecting to Canvas, Courses and assignments, Grading and the rubric, Claude drafts, Uploading grades to Canvas, Something else]
