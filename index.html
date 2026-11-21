@@ -126,16 +126,47 @@
             <h3>One rubric item at a time</h3>
             <p>
               Go through every student on the same question or rubric item, so
-              the same standard applies to everyone.
+              the same standard applies to everyone. Claude can find where each
+              student answered it, and Rubricraft cuts out just that part, so
+              you can score every student's answer in a row.
+            </p>
+          </li>
+          <li>
+            <h3>Levels set the judgement</h3>
+            <p>
+              Choose the rubric level that fits the answer, such as Excellent,
+              Good or Developing. That sets the starting score, and Canvas
+              receives the level with the grade.
             </p>
           </li>
           <li>
             <h3>Reusable remarks with points</h3>
             <p>
               Write a remark once, such as “State the non-negativity bounds,
-              −0.5”, and apply it to every answer with the same issue. Change
-              its wording or points later and every student who has it is
-              updated, and marked for you to check again.
+              −0.5”, and apply it to every answer with the same issue. Remarks
+              add or take away points from the chosen level, within its range.
+              If they would take the score outside it, you are warned to move
+              the answer to another level. Change a remark's wording or points
+              later and every student who has it is updated, and marked for you
+              to check again.
+            </p>
+          </li>
+          <li>
+            <h3>Edit the Canvas rubric while you grade</h3>
+            <p>
+              Found a missing rubric item halfway through? Add, edit or remove
+              items and their levels from the grading screen, and Rubricraft
+              updates the rubric in Canvas. Every change is previewed, with the
+              new total and the scores it affects, before Canvas is touched.
+            </p>
+          </li>
+          <li>
+            <h3>PDF and Word submissions</h3>
+            <p>
+              Typed and handwritten PDFs, scans turned upright, and Word
+              documents, all read on your computer. Excel workbooks come in the
+              next release. Rubricraft warns you about text a reader would not
+              see, such as hidden or white text.
             </p>
           </li>
           <li>
@@ -163,14 +194,44 @@
             src="assets/screenshots/grading.webp"
             width="1600"
             height="1012"
-            alt="Grading view: a student's PDF answer on the left and the rubric on the right, with a score, a reusable remark and feedback for each rubric item."
+            alt="Grading one rubric item: the part of a student's PDF that answers it, cut out on the left; on the right, the levels Excellent, Good, Developing and Limited with Good chosen, and a reusable remark deducting half a point."
           />
           <figcaption>
-            <strong>The work and the rubric, side by side.</strong> Score each
-            rubric item, reuse remarks across students, and ask Claude for a
-            draft when you want one.
+            <strong>Choose the level, then fine-tune.</strong> The student's
+            answer to the rubric item, cut out of the PDF. The level sets the
+            score, and reusable remarks adjust it within that level's range.
           </figcaption>
         </figure>
+        <div class="screen-pair">
+          <figure class="screen">
+            <img
+              src="assets/screenshots/answers.webp"
+              width="1600"
+              height="1012"
+              alt="All three students' answers to the same rubric item stacked one below the other, each cut out of its PDF with a score and level buttons beside it."
+              loading="lazy"
+            />
+            <figcaption>
+              <strong>Every student's answer in a row.</strong> Claude finds
+              where each student answered a rubric item, so you can score the
+              same question for the whole class.
+            </figcaption>
+          </figure>
+          <figure class="screen">
+            <img
+              src="assets/screenshots/rubric.webp"
+              width="1600"
+              height="1012"
+              alt="Editing a Canvas rubric item: new points and the levels Excellent, Good, Developing and Limited, with a preview of the new assignment total before Canvas is changed."
+              loading="lazy"
+            />
+            <figcaption>
+              <strong>Edit the Canvas rubric while you grade.</strong> Add, edit
+              or remove rubric items and their levels. The preview shows the new
+              total and the scores affected before Canvas is changed.
+            </figcaption>
+          </figure>
+        </div>
         <div class="screen-pair">
           <figure class="screen">
             <img
@@ -384,29 +445,30 @@
           <details>
             <summary>What if a submission tries to instruct the AI?</summary>
             <p>
-              Rubricraft flags text in a PDF that a reader cannot see, or that
-              is addressed to an AI grader, and shows it to you above the PDF.
-              It is a prompt to look closer, not proof of misconduct, and it
-              cannot catch everything. That is one reason AI only ever drafts
-              and you approve every grade.
+              Rubricraft flags text in a PDF or Word document that a reader
+              cannot see, or that is addressed to an AI grader, and shows it to
+              you above the submission. It is a prompt to look closer, not proof
+              of misconduct, and it cannot catch everything. That is one reason
+              AI only ever drafts and you approve every grade.
             </p>
           </details>
           <details>
             <summary>Can I continue grading I started in Canvas?</summary>
             <p>
-              Yes. Rubric scores and comments already in Canvas are brought
-              into Rubricraft for every submission you have not graded there
-              yet, and nothing you have graded is overwritten. Finish the
-              remaining submissions by hand or with AI drafts, or revisit
-              earlier ones.
+              Yes. Rubric scores and comments already in Canvas are brought into
+              Rubricraft for every submission you have not graded there yet, and
+              nothing you have graded is overwritten. Finish the remaining
+              submissions by hand or with AI drafts, or revisit earlier ones.
             </p>
           </details>
           <details>
             <summary>When can I try it?</summary>
             <p>
               Now: <a class="text-link" href="#beta">download the beta</a>. It
-              covers course and assignment browsing, submission downloads,
-              review by rubric item, optional Claude drafts, and sending
+              covers course and assignment browsing, submission downloads (PDF
+              and Word), locating each student's answer to a rubric item, review
+              by rubric item with levels and reusable remarks, changing the
+              rubric while you grade, optional Claude drafts, and sending
               approved grades back to Canvas. Still in development: grading by
               conversation, class-wide feedback for the teacher, and linking
               grading to the course learning outcomes, which you can already
