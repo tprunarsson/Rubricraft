@@ -505,6 +505,10 @@ footer > span {
     padding: 0;
     gap: 8px;
   }
+  .site-header nav a:nth-child(2),
+  .site-header nav a:nth-child(3) {
+    display: none;
+  }
   .hero {
     padding-block: 45px;
   }
